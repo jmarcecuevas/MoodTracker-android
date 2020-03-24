@@ -1,6 +1,8 @@
 package com.marcelocuevas.moodtracker.ui.components.fragment
 
 import com.marcelocuevas.moodtracker.R
+import com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
+import kotlinx.android.synthetic.main.fragment_calendar.*
 
 class CalendarFragment: GenericFragment() {
 
@@ -8,7 +10,10 @@ class CalendarFragment: GenericFragment() {
         R.layout.fragment_calendar
 
     override fun init() {
-        print("INIT")
+
+//        calendarView.setCalendarListener(CollapsibleCalendar.CalendarListener {
+//
+//        })
     }
 
 

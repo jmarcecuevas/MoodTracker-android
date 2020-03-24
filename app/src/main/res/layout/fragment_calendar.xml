@@ -1,67 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:card_view="http://schemas.android.com/tools">
+    android:orientation="vertical">
 
-   <FrameLayout
-       android:layout_width="match_parent"
-       android:layout_height="40dp"
-       android:background="@color/colorPrimaryDark"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toStartOf="parent">
-   </FrameLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
-        android:layout_marginBottom="5dp"
-        card_view:cardCornerRadius="20dp"
-        app:cardCornerRadius="20dp">
+        android:background="@color/colorPrimary">
 
-        <LinearLayout
+        <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
-            android:orientation="vertical">
+            android:id="@+id/calendarView"
+            app:primaryColor="@color/colorPrimary"
+            app:textColor="@android:color/white"
+            app:selectedItem_textColor="@color/colorPrimary"
+            app:todayItem_textColor="@android:color/white"
+            app:todayItem_background="@drawable/circle_white_stroke_background"
+            app:selectedItem_background="@drawable/circle_white_solid_background"
+            app:buttonLeft_drawableTintColor="@android:color/white"
+            app:buttonRight_drawableTintColor="@android:color/white"
+            app:expandIconColor="@android:color/white">
+        </com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="16dp"
-                android:textAlignment="center"
-                android:text="Daily report">
+    </FrameLayout>
 
-            </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/textDark"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="Daily report">
 
-            <com.vivekkaushik.datepicker.DatePickerTimeline
-                android:id="@+id/datePickerTimeline"
-                android:layout_marginBottom="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                app:dayTextColor="@color/textLight"
-                app:dateTextColor="@color/textLight"
-                app:monthTextColor="@color/textLight"
-                app:disabledColor="@color/colorAccent" />
+    </TextView>
 
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
