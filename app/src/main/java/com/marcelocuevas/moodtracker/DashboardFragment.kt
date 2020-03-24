@@ -2,12 +2,10 @@ package com.marcelocuevas.moodtracker
 
 class DashboardFragment: GenericFragment() {
 
-    override fun layout(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    override fun layout(): Int = R.layout.fragment_dashboard
 
     override fun init() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        print("INIT")
     }
 
 
