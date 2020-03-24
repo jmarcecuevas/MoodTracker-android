@@ -2,12 +2,12 @@ package com.marcelocuevas.moodtracker.ui.components.fragment
 
 import com.marcelocuevas.moodtracker.R
 
-class RelaxFragment: GenericFragment() {
+class CalendarSheetFragment: GenericFragment() {
 
-    override fun layout(): Int = R.layout.fragment_relax
+    override fun layout(): Int = R.layout.fragment_calendar_sheet
 
     override fun init() {
-        print("INIT")
+       print("INIT")
     }
 
 
