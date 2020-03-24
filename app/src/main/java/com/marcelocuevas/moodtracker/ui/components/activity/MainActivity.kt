@@ -1,14 +1,14 @@
-package com.marcelocuevas.moodtracker
+package com.marcelocuevas.moodtracker.ui.components.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.marcelocuevas.moodtracker.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +28,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNav() {
-        navController = findNavController(this, R.id.fragmentHost)
+        navController = findNavController(this,
+            R.id.fragmentHost
+        )
         bottomNav.setupWithNavController(navController)
     }
 

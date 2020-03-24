@@ -1,4 +1,4 @@
-package com.marcelocuevas.moodtracker
+package com.marcelocuevas.moodtracker.ui.components.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

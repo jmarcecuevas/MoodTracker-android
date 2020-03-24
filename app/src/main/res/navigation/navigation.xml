@@ -5,18 +5,18 @@
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.marcelocuevas.moodtracker.CalendarFragment"
+        android:name="com.marcelocuevas.moodtracker.ui.components.fragment.CalendarFragment"
         android:label="@string/calendar_fragment_title" />
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.marcelocuevas.moodtracker.DashboardFragment"
+        android:name="com.marcelocuevas.moodtracker.ui.components.fragment.DashboardFragment"
         android:label="@string/dashboard_fragment_title" />
     <fragment
         android:id="@+id/relaxFragment"
-        android:name="com.marcelocuevas.moodtracker.RelaxFragment"
+        android:name="com.marcelocuevas.moodtracker.ui.components.fragment.RelaxFragment"
         android:label="@string/relax_fragment_title" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.marcelocuevas.moodtracker.SettingsFragment"
+        android:name="com.marcelocuevas.moodtracker.ui.components.fragment.SettingsFragment"
         android:label="@string/settings_fragment_title" />
 </navigation>
