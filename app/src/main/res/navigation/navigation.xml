@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation.xml">
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation.xml"
+    app:startDestination="@id/calendarFragment">
 
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.marcelocuevas.moodtracker.CalendarFragment"
+        android:label="@string/calendar_fragment_title" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.marcelocuevas.moodtracker.DashboardFragment"
+        android:label="@string/dashboard_fragment_title" />
+    <fragment
+        android:id="@+id/relaxFragment"
+        android:name="com.marcelocuevas.moodtracker.RelaxFragment"
+        android:label="@string/relax_fragment_title" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.marcelocuevas.moodtracker.SettingsFragment"
+        android:label="@string/settings_fragment_title" />
 </navigation>

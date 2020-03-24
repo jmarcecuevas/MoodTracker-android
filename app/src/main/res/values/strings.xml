@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MoodTracker</string>
+    <string name="calendar_fragment_title">Calendar</string>
+    <string name="dashboard_fragment_title">Dashboard</string>
+    <string name="mood_tracker_fragment_title">Add</string>
+    <string name="relax_fragment_title">Relax</string>
+    <string name="settings_fragment_title">Settings</string>
 </resources>
