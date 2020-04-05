@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5a67cc</color>
+    <color name="colorPrimary">#26263d</color>
     <color name="colorPrimaryDark">#26263d</color>
-    <color name="colorAccent">#5a67cc</color>
+    <color name="colorAccent">#414c9c</color>
 
     <color name="colorSecondary">#e6e8f7</color>
     <color name="altSecondary">#c1c8d5</color>
 
     <color name="textDark">#232831</color>
     <color name="textLight">#d6d9de</color>
+
+    <color name="eventCalendarColor">#DB615D</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.marcelocuevas.moodtracker.ui.components.fragment
+package com.marcelocuevas.moodtracker.ui.fragment
 
 import com.marcelocuevas.moodtracker.R
 
